@@ -1,0 +1,33 @@
+{
+  "scripts": {
+    "start": "parcel orange/index.html",
+    "build": "parcel build orange/index.html --dist-dir docs  --no-source-maps --public-url ./"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.19.1",
+    "@parcel/babel-preset-env": "^2.7.0",
+    "@parcel/transformer-glsl": "^2.8.3",
+    "@types/gl-matrix": "^3.2.0",
+    "assert": "^2.0.0",
+    "parcel": "^2.7.0",
+    "path-browserify": "^1.0.1",
+    "process": "^0.11.10",
+    "punycode": "^1.4.1",
+    "querystring-es3": "^0.2.1",
+    "url": "^0.11.0",
+    "util": "^0.12.5"
+  },
+  "dependencies": {
+    "file-system": "^1.2.2",
+    "gl-matrix": "^3.4.3",
+    "glsl-shader-loader": "^0.1.6",
+    "webgl-obj-loader": "^2.0.8"
+  },
+  "name": "webgl-obj-scene",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
