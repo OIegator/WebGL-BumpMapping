@@ -16,6 +16,7 @@ function drawMesh(gl, programInfo, buffers, texture1, texture2, cube_type, contr
         case "orange":
             mat4.translate(modelViewMatrix, modelViewMatrix, controls.object_position);
             mat4.rotate(modelViewMatrix, modelViewMatrix, controls.rotation_angle_pedestal_2scene, [0, 1, 0]);
+            mat4.rotate(modelViewMatrix, modelViewMatrix, -0.7, [1, 0, 1]);
             mat4.translate(modelViewMatrix, modelViewMatrix, [0.0, 0.0, 0.0]);
             mat4.rotate(modelViewMatrix, modelViewMatrix, controls.rotation_angle_gold + controls.rotation_angle_pedestal_2itself, [0, 1, 0]);
             break;

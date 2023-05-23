@@ -15,7 +15,7 @@ let gl;
 let controls = {
     current_rotator: "gold",
     current_controller: "ambient",
-    rotation_angle_gold: Math.PI * -0.5,
+    rotation_angle_gold: -2.8,
     object_position: vec3.fromValues(0.0, 0.0, -0.6),
     headlight_direction: vec3.fromValues(0.0, 0.0, -1.0),
     object_direction: vec3.fromValues(0.0, 0.0, 16.0),
@@ -299,6 +299,7 @@ function checkKeyPressed(e) {
         switch (controls.current_rotator) {
             case "gold":
                 controls.rotation_angle_gold -= 0.1;
+                console.log(controls.rotation_angle_gold);
                 break;
             case "silver":
                 controls.rotation_angle_silver -= 0.1;
