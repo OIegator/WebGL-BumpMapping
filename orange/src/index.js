@@ -4,7 +4,7 @@ import {initMeshBuffers} from "./initMeshBuffers";
 import {drawMesh} from "./drawMesh.js";
 import {vec3} from "gl-matrix";
 import orange_texture from "../textures/orange_color.png"
-import orange_normal from "../textures/orange_normal.jpg"
+import orange_normal from "../textures/bump_orange.jpg"
 
 const canvas = document.querySelector('canvas');
 const textLight = document.getElementById('light-overlay');

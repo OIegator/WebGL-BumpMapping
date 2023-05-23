@@ -70,7 +70,7 @@ function drawMesh(gl, programInfo, buffers, texture1, texture2, cube_type, contr
         programInfo.uniformLocations.ambientIntensity,
         controls.ambient_intensity);
 
-    const lightPositionValue = [0, 4, -0.5];
+    const lightPositionValue = [5, 4, 0];
 
     gl.uniform3fv(
         programInfo.uniformLocations.lightPosition,
@@ -151,7 +151,7 @@ function setPositionAttribute(gl, buffers, programInfo) {
 }
 
 function setTextureAttribute(gl, buffers, programInfo) {
-    const num = buffers.mesh.textureBuffer.itemSize;; // every coordinate composed of 2 values
+    const num = buffers.mesh.textureBuffer.itemSize; // every coordinate composed of 2 values
     const type = gl.FLOAT; // the data in the buffer is 32-bit float
     const normalize = false; // don't normalize
     const stride = 0; // how many bytes to get from one set to the next
